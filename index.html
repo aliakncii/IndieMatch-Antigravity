@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>IndieMatch Demo</title>
+</head>
+
+<body>
+    <!-- Dev Panel for debugging -->
+    <div id="dev-panel">
+        <div id="dev-info">Init...</div>
+        <div id="dev-log">Waiting...</div>
+    </div>
+
+    <div id="desktop-wrapper">
+        <div id="phone-frame">
+            <div id="app">
+
+                <!-- Feed Container -->
+                <div id="feed-container">
+                    <!-- Playables will be injected here -->
+                </div>
+
+                <!-- Interaction Layers -->
+                <div id="edge-zone-left" class="edge-zone"></div>
+                <div id="edge-zone-right" class="edge-zone"></div>
+
+                <!-- UI Overlay (Static for now, could be dynamic per item if needed) -->
+                <div id="ui-overlay">
+                    <!-- Top Header -->
+                    <div class="top-header">
+                        <span class="tab inactive">Following</span>
+                        <span class="separator">|</span>
+                        <span class="tab active">For You</span>
+                    </div>
+
+                    <!-- Right Action Bar -->
+                    <div class="right-actions">
+                        <div class="action-item">
+                            <div class="icon-circle profile-pic"></div>
+                        </div>
+                        <div class="action-item">
+                            <span class="icon">♥</span>
+                            <span class="count">8.2M</span>
+                        </div>
+                        <div class="action-item">
+                            <span class="icon">💬</span>
+                            <span class="count">54K</span>
+                        </div>
+                        <div class="action-item">
+                            <span class="icon">↗</span>
+                            <span class="count">Share</span>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Info -->
+                    <div class="bottom-info">
+                        <div class="username">@IndieMatch</div>
+                        <div class="description">Swipe right to play nicely! <span class="tag">#demo</span> <span
+                                class="tag">#gaming</span></div>
+                        <div class="music-note">♫ Original Sound - IndieMatch Demo</div>
+                    </div>
+                </div>
+
+                <!-- Global Toast -->
+                <div id="toast" class="hidden"></div>
+
+                <!-- Loading Overlay -->
+                <div id="loading-overlay" class="hidden">
+                    <div class="spinner"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
